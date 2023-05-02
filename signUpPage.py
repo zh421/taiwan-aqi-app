@@ -1,5 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
+import os
 
 class SignupPage(tk.Tk):
 
@@ -45,6 +46,8 @@ class SignupPage(tk.Tk):
                 tk.messagebox.showerror("Information", "That Username already exists")
             else:
                 if len(pw) > 3:
+                    if not os.path.exists("info"):
+                        os.makedirs("info")
                     credentials = open("info/credentials.txt", "a")
                     credentials.write(f"Username,{user},Password,{pw},\n")
                     credentials.close()

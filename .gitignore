@@ -1,0 +1,6 @@
+$ cat .gitignore
+# Untracked files:
+credentials.txt
+# Untracked folders:
+info
+unused

@@ -11,6 +11,7 @@
   
 
 # 簡介
+使用index開啟
 登入前需要先註冊，註冊資訊寫在info/credentials.txt  
 註冊後第一次進入會前往設定頁面，需要輸入api，api資訊寫在info/api.txt。輸入完成後的每次登入，會自動前往查詢頁面。
   
